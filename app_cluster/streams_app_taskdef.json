@@ -1,0 +1,17 @@
+[
+    {
+        "name": "ddp-poc-stream-app",
+        "logConfiguration": {
+            "logDriver": "awslogs",
+            "options": {
+                "awslogs-group": "/ecs/ddp-poc-stream-app",
+                "awslogs-region": "us-east-1",
+                "awslogs-stream-prefix": "ecs"
+            }
+        },
+        "cpu": 10,
+        "memory": 1024,
+        "image": "936213193977.dkr.ecr.us-east-1.amazonaws.com/ddp-poc-stream-api:latest",
+        "essential": true
+    }
+]
